@@ -12,7 +12,7 @@ export const config: WebdriverIO.Config = {
     // Specify Test Files
     // ==================
     specs: [
-        './tests/mocha/**/*.spec.ts'
+        './tests/mocha/**/*.spec.ts',
     ],
 	
     // ============

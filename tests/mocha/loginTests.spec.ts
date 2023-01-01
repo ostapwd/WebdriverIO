@@ -13,7 +13,7 @@ describe('Login to the application', () => {
         await loginPage.waitForSeconds(3);
 
         productPage.productsLabel().then(label => {
-            expect(label.text()).toEqual("Products");
+            expect(label.getText()).toEqual("Products");
         })
 
     });

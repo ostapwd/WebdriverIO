@@ -2,7 +2,7 @@ import BasePage from "./BasePage";
 
 export class ProductsPage extends BasePage {
     public constructor() {
-        super();
+        super();    
     }
 
     private products() { return $$(".inventory_item button[id^=add-to-cart]"); }
@@ -17,7 +17,7 @@ export class ProductsPage extends BasePage {
         });
         return this;
     }
-
+    
 }
 
 export default new ProductsPage();
