@@ -2,13 +2,13 @@ import BasePage from "./BasePage";
 
 export class CartPage extends BasePage {
     public constructor() {
-        super();    
+        super();
     }
-    get cartButton() { return $(".shopping_cart_link"); }
+    get checkoutButton() { return $("#checkout"); }
 
-    async clickOnCartButton() {
-        await this.cartButton.click();
-     }
+    async clickOnCheckoutButton() {
+        await this.checkoutButton.click();
+    }
 }
 
 export default new CartPage();

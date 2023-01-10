@@ -1,4 +1,4 @@
-import { Given, Then, When} from '@cucumber/cucumber';
+import { Given, Then, When } from '@cucumber/cucumber';
 
 import loginPage from "../../../pages/login.page";
 import inventoryPage from "../../../pages/products.page";
@@ -26,11 +26,11 @@ Given(/^they add all products to the cart$/, async () => {
 // });
 
 Given(/^they navigate to the Cart page$/, async () => {
-    await cartPage.clickOnCartButton();
+    await inventoryPage.clickOnCartButton();
 });
 
 Given(/^they navigate to the Checkout page$/, async () => {
-    await checkoutPage.clickOnCheckoutButton();
+    await cartPage.clickOnCheckoutButton();
 });
 
 When(/^they provide valid user data$/, async () => {
