@@ -20,7 +20,7 @@ export class ProductsPage extends BasePage {
     }
 
     async clickOnCartButton() {
-        await this.cartButton.click();
+        await (await this.cartButton).click();
     }
 }
 

@@ -13,11 +13,11 @@ export class CheckoutPage extends BasePage {
     get completeHeader() { return $(".complete-header"); }
 
     async fillInCheckoutUserCredentials() {
-        await this.firstNameInputField.setValue("XYZ");
-        await this.lastNameInputField.setValue("ABC");
-        await this.zipCodeInputField.setValue("1234");
-        await this.continueButton.click();
-        await this.finishButton.click();
+        await (await this.firstNameInputField).setValue("XYZ");
+        await (await this.lastNameInputField).setValue("ABC");
+        await (await this.zipCodeInputField).setValue("1234");
+        await (await this.continueButton).click();
+        await (await this.finishButton).click();
     }
 }
 

@@ -7,9 +7,9 @@ class LoginPage extends Page {
     private loginButton() { return $("#login-button"); }
 
     async login(username: string, password: string) {
-        await this.usernameInput().setValue(username);
-        await this.passwordInput().setValue(password);
-        await this.loginButton().click();
+        await (await this.usernameInput()).setValue(username);
+        await (await this.passwordInput()).setValue(password);
+        await (await this.loginButton()).click();
     }
 
     async openApp() {

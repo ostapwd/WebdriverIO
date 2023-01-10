@@ -7,7 +7,7 @@ export class CartPage extends BasePage {
     get checkoutButton() { return $("#checkout"); }
 
     async clickOnCheckoutButton() {
-        await this.checkoutButton.click();
+        await (await this.checkoutButton).click();
     }
 }
 
