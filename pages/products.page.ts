@@ -9,6 +9,7 @@ export class ProductsPage extends BasePage {
     public inventoryPageLogoLabel() { return $(".app_logo"); }
     public productsLabel() { return $(".header_secondary_container > .title"); }
     public cartNumberLabel() { return $(".//*[contains(@class, 'shopping_cart_badge')]"); }
+    public cartIcon() { return $(".shopping_cart_link"); }
 
     public addToCartAllProducts() {
         this.products().forEach(async i => {
@@ -18,6 +19,9 @@ export class ProductsPage extends BasePage {
         return this;
     }
 
+    public clickOnCartIcon() {
+        this.cartIcon().click();
+    }
 }
 
 export default new ProductsPage();

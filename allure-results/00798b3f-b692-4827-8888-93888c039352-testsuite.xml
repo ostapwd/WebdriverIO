@@ -1,0 +1,187 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1673347134372' stop='1673347136274'>
+    <name>Order products from the webshop: Verify a user can add products to a cart</name>
+    <title>Order products from the webshop: Verify a user can add products to a cart</title>
+    <test-cases>
+        <test-case start='1673347134373' status='passed' stop='1673347134375'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1673347134376' status='passed' stop='1673347135435'>
+            <name>Given Existing user navigates to the app</name>
+            <title>Given Existing user navigates to the app</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1673347134381' status='passed' stop='1673347134635'>
+                    <name>POST /session/:sessionId/window/maximize</name>
+                    <title>POST /session/:sessionId/window/maximize</title>
+                    <attachments>
+                        <attachment title='Response' source='ecf5133d-0352-4c47-9a9b-caced6caef2c-attachment.json' type='application/json' size='59'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1673347134635' status='passed' stop='1673347135434'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='dab6db19-2840-4ecc-9c87-2a1a80b770ca-attachment.json' type='application/json' size='41'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1673347135435' status='broken' stop='1673347136272'>
+            <name>When They provide correct credentials</name>
+            <title>When They provide correct credentials</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps>
+                <step start='1673347135437' status='passed' stop='1673347135465'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='e278a00d-b735-4807-8b7a-84234fc6f6ba-attachment.json' type='application/json' size='54'/>
+                        <attachment title='Response' source='214cfe6f-4569-4a7d-a6e3-ac6c3fbc44d8-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1673347135470' status='passed' stop='1673347135512'>
+                    <name>POST /session/:sessionId/element/16e36a00-1419-4ff6-9370-18a56966b4e8/clear</name>
+                    <title>POST /session/:sessionId/element/16e36a00-1419-4ff6-9370-18a56966b4e8/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1673347135517' status='passed' stop='1673347135595'>
+                    <name>POST /session/:sessionId/element/16e36a00-1419-4ff6-9370-18a56966b4e8/value</name>
+                    <title>POST /session/:sessionId/element/16e36a00-1419-4ff6-9370-18a56966b4e8/value</title>
+                    <attachments>
+                        <attachment title='Request' source='f99e9fc0-50ce-4807-b739-a8a93c2b9bce-attachment.json' type='application/json' size='29'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1673347135596' status='passed' stop='1673347135615'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='95a50721-8ec2-4557-b17e-859294cb39d4-attachment.json' type='application/json' size='53'/>
+                        <attachment title='Response' source='ef5f2714-cf97-4849-8552-c7fa732a0218-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1673347135618' status='passed' stop='1673347135658'>
+                    <name>POST /session/:sessionId/element/e1a05578-2137-4edb-a49c-d377672a2258/clear</name>
+                    <title>POST /session/:sessionId/element/e1a05578-2137-4edb-a49c-d377672a2258/clear</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1673347135659' status='passed' stop='1673347135734'>
+                    <name>POST /session/:sessionId/element/e1a05578-2137-4edb-a49c-d377672a2258/value</name>
+                    <title>POST /session/:sessionId/element/e1a05578-2137-4edb-a49c-d377672a2258/value</title>
+                    <attachments>
+                        <attachment title='Request' source='305397df-12ea-4e67-9b5c-d5b97c10cb98-attachment.json' type='application/json' size='28'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1673347135734' status='passed' stop='1673347135755'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='41a3383b-1512-4ddc-b3eb-2976930a747e-attachment.json' type='application/json' size='57'/>
+                        <attachment title='Response' source='d3194bf8-7a95-49e6-b2d6-f2d6be68b42f-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1673347135756' status='passed' stop='1673347135916'>
+                    <name>POST /session/:sessionId/element/8e960f61-492c-48c7-9d45-07e9f37a954a/click</name>
+                    <title>POST /session/:sessionId/element/8e960f61-492c-48c7-9d45-07e9f37a954a/click</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start='1673347135920' status='passed' stop='1673347136270'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='ab45a550-8b86-4de6-b2ba-7ceaf3149d64-attachment.png' type='image/png' size='171844'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Error: directory (C:\Users\Juhász Kristóf\Documents\EPAM JS AT\WebdriverIO\screenshots) doesn't exist</message>
+                <stack-trace>Error: directory (C:\Users\Juhász Kristóf\Documents\EPAM JS AT\WebdriverIO\screenshots) doesn't exist
+                    at assertDirectoryExists (C:\Users\Juhász Kristóf\Documents\EPAM JS AT\WebdriverIO\node_modules\webdriverio\build\utils\index.js:374:15)
+                    at Browser.saveScreenshot (C:\Users\Juhász Kristóf\Documents\EPAM JS AT\WebdriverIO\node_modules\webdriverio\build\commands\browser\saveScreenshot.js:35:39)
+                    at Browser.wrapCommandFn (C:\Users\Juhász Kristóf\Documents\EPAM JS AT\WebdriverIO\node_modules\@wdio\utils\build\shim.js:137:38)
+                    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+                    at async World.&lt;anonymous> (C:\Users\Juhász Kristóf\Documents\EPAM JS AT\WebdriverIO\tests\cucumber\steps\AddProducts.steps..ts:18:5)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1673347136272' status='pending' stop='1673347136272'>
+            <name>And They add all products to the cart</name>
+            <title>And They add all products to the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1673347136272' status='pending' stop='1673347136272'>
+            <name>Then All products should be in the cart</name>
+            <title>Then All products should be in the cart</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1673347136273' status='passed' stop='1673347136273'>
+            <name></name>
+            <title></title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-108.0.5359.125'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

@@ -1,1 +1,1 @@
-# WebdriverIO
+# Kristóf Juhász's Test Automation Framework

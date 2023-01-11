@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\".//*[contains(@class, 'shopping_cart_badge')]\"}\n  (Session info: chrome=108.0.5359.125)",
+  "stacktrace": "Backtrace:\n\t(No symbol) [0x009FF243]\n\t(No symbol) [0x00987FD1]\n\t(No symbol) [0x0087D04D]\n\t(No symbol) [0x008AC0B0]\n\t(No symbol) [0x008AC22B]\n\t(No symbol) [0x008DE612]\n\t(No symbol) [0x008C85D4]\n\t(No symbol) [0x008DC9EB]\n\t(No symbol) [0x008C8386]\n\t(No symbol) [0x008A163C]\n\t(No symbol) [0x008A269D]\n\tGetHandleVerifier [0x00C99A22+2655074]\n\tGetHandleVerifier [0x00C8CA24+2601828]\n\tGetHandleVerifier [0x00AA8C0A+619850]\n\tGetHandleVerifier [0x00AA7830+614768]\n\t(No symbol) [0x009905FC]\n\t(No symbol) [0x00995968]\n\t(No symbol) [0x00995A55]\n\t(No symbol) [0x009A051B]\n\tBaseThreadInitThunk [0x76B300F9+25]\n\tRtlGetAppContainerNamedObjectPath [0x77D27BBE+286]\n\tRtlGetAppContainerNamedObjectPath [0x77D27B8E+238]\n"
+}

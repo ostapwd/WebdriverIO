@@ -47,6 +47,9 @@ export const config: WebdriverIO.Config = {
             outputFileFormat: (opts: any) => {
                 return `results-${opts.cid}.${opts.capabilities}.json`
             }
+        }],
+        ['allure', {
+            outputDir: 'allure-results',
         }]
     ],
 
