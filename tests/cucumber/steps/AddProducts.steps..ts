@@ -53,6 +53,6 @@ When(/^They complete their purchase by clicking on finish button$/, async () => 
 });
 Then(/^All previously added products will be shipped$/, async () => {
     let text = await completePage.complete().getText();
-    await expect(text).toEqual("Your order has been dispatched, and will arrive just s fast as the pony can get there!");
+    await expect(text).toEqual("Your order has been dispatched, and will arrive just as fast as the pony can get there!");
     await completePage.waitForSeconds(3);
 });

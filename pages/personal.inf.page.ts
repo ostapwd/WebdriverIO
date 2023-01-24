@@ -4,22 +4,22 @@ export class Personal extends BasePage {
     public constructor() {
         super();
     }
-    public firstname(){return $('#first-name');}
-    public lastname(){return $('#last-name');}
-    public zipcode(){return $('#postal-code');}
-    public continue(){return $('#continue')}
+    public firstname() { return $('#first-name'); }
+    public lastname() { return $('#last-name'); }
+    public zipcode() { return $('#postal-code'); }
+    public continue() { return $('#continue') }
 
-    async sendKeysToFirstNameField(text){
+    async sendKeysToFirstNameField(text) {
         await (await this.firstname()).addValue(text);
     }
-    public sendKeysToLastNameField(text){
-        this.lastname().addValue(text);
+    async sendKeysToLastNameField(text) {
+        await (await this.lastname()).addValue(text);
     }
-    public sendKeysToZipcodeField(text){
-        this.zipcode().addValue(text);
+    async sendKeysToZipcodeField(text) {
+        await (await this.zipcode()).addValue(text);
     }
-    public clickOnContinue(){
-        this.continue().click();
+    async clickOnContinue() {
+        await (await this.continue()).click();
     }
 }
 
