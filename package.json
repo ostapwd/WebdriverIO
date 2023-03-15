@@ -7,13 +7,11 @@
     "start": "ts-node runner.ts",
     "test": "wdio run ./config/wdio.conf.ts",
     "report:mocha": "marge ./reports/mocha/wdio-ma-merged.json --reportTitle 'WebAppMochaReport' && move mochawesome-report.html ./mochawesome-report",
-    "report:mocha:ci": "marge ./reports/mocha/wdio-ma-merged.json",
-    "test:e2e": "wdio run ./config/wdio.conf.e2e.ts",
+    "test:cucumber": "wdio run ./config/wdio.conf.cucumber.ts",
     "report:cucumber": "ts-node ./generator/index.ts"
   },
-   "devDependencies": {
-    "@faker-js/faker": "^6.3.1",
-    "@types/nodemailer": "^6.4.4",
+
+  "devDependencies": {
     "@wdio/cli": "^7.19.7",
     "@wdio/cucumber-framework": "^7.19.7",
     "@wdio/junit-reporter": "^7.19.7",
@@ -22,9 +20,7 @@
     "@wdio/selenium-standalone-service": "^7.19.5",
     "@wdio/spec-reporter": "^7.19.7",
     "cucumber-html-reporter": "^5.5.0",
-    "dotenv": "^16.0.0",
     "mochawesome-report-generator": "^3.1.5",
-    "nodemailer": "^6.7.5",
     "ts-node": "^10.7.0",
     "tsconfig-paths": "^4.0.0",
     "typescript": "^4.6.4",
@@ -33,8 +29,5 @@
     "wdio-docker-service": "^3.2.0",
     "wdio-json-reporter": "^3.0.0",
     "wdio-mochawesome-reporter": "^4.0.0"
-  },
-  "dependencies": {
-    "zip-local": "^0.3.5"
   }
 }

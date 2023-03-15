@@ -2,6 +2,7 @@ import loginPage from "../../pages/login.page";
 import productPage from "../../pages/products.page";
 
 describe('Login to the application', () => {
+    //const loginPage = new LoginPage();
 
     beforeEach(async () => {
         await loginPage.openApp();
@@ -13,7 +14,7 @@ describe('Login to the application', () => {
         await loginPage.waitForSeconds(3);
 
         productPage.productsLabel().then(label => {
-            expect(label.text()).toEqual("Products");
+            expect(label.getText()).toEqual("Products");
         })
 
     });

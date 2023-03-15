@@ -1,5 +1,3 @@
-const logStep = (logMessage: string) => console.log(`STEP || ${logMessage}`);
-
 export default class BasePage {
 
     async waitForSeconds(value: number) {

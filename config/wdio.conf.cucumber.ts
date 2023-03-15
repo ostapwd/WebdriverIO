@@ -1,5 +1,5 @@
 import cucumberJson from 'wdio-cucumberjs-json-reporter';
-import { CUCUMBER_JSON_REPORT_DIR, CUCUMBER_REPORT_DIR, MAIL_JSON_CUCUMBER_DIR } from '../utils/pathConstants';
+import { CUCUMBER_JSON_REPORT_DIR, CUCUMBER_REPORT_DIR } from '../utils/pathConstants';
 import { deleteDirectory } from '../utils/fileutils';
 import { chromeCapabilities } from "./capabilities";
 
@@ -41,12 +41,6 @@ export const config: WebdriverIO.Config = {
         ['cucumberjs-json', {
             jsonFolder: CUCUMBER_JSON_REPORT_DIR,
             language: 'en',
-        }],
-        ['json', {
-            outputDir: MAIL_JSON_CUCUMBER_DIR,
-            outputFileFormat: (opts: any) => {
-                return `results-${opts.cid}.${opts.capabilities}.json`
-            }
         }]
     ],
 
@@ -82,7 +76,6 @@ export const config: WebdriverIO.Config = {
      */
     onPrepare: function (config, capabilities) {
         deleteDirectory(CUCUMBER_REPORT_DIR);
-        deleteDirectory(MAIL_JSON_CUCUMBER_DIR);
     },
     /**
      * Gets executed before a worker process is spawned and can be used to initialise specific service
@@ -189,8 +182,6 @@ export const config: WebdriverIO.Config = {
      * @param {<Object>} results object containing test results
      */
     onComplete: function (exitCode, config, capabilities, results) {
-        const mergeResults = require('wdio-json-reporter/mergeResults')
-        mergeResults(MAIL_JSON_CUCUMBER_DIR, 'results-*', '/merged_result.json')
     },
     /**
     * Gets executed when a refresh happens.

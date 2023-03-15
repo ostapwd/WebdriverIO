@@ -3,28 +3,13 @@ import { deleteDirectory } from "../utils/fileutils";
 import { chromeCapabilities } from "./capabilities";
 
 export const config: WebdriverIO.Config = {
-    // ====================
-    // Runner Configuration
-    // ====================
     runner: 'local',
-
-    // ==================
-    // Specify Test Files
-    // ==================
     specs: [
         './tests/mocha/**/*.spec.ts'
     ],
-	
-    // ============
-    // Capabilities
-    // ============
     maxInstances: 1,
     capabilities: chromeCapabilities,
 
-    // ===================
-    // Test Configurations
-    // ===================
-    // Level of logging verbosity: trace | debug | info | warn | error | silent
     logLevel: 'error',
     bail: 0,
     baseUrl: 'http://localhost',
