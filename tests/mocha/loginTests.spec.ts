@@ -6,6 +6,7 @@ describe('Login to the application', () => {
 
     beforeEach(async () => {
         await loginPage.openApp();
+        await loginPage.waitForPageToBeLoaded();
         await loginPage.waitForSeconds(3);
     });
 

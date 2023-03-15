@@ -1,5 +1,9 @@
 export default class BasePage {
 
+    async waitForPageToBeLoaded(){
+        return this;
+    }
+
     async waitForSeconds(value: number) {
         await browser.pause(value * 1000);
     }
