@@ -1,21 +1,22 @@
 import BasePage from "./BasePage";
 import url from "../data/urls";
 
-class LoginPage extends BasePage {
+export class LoginPage extends BasePage {
 
     private usernameInput() { return $("#user-name"); }
     private passwordInput() { return $("#password"); }
     private loginButton() { return $("#login-button"); }
 
     async waitForPageToBeLoaded() {
-        await this.usernameInput().waitForDisplayed({ timeout: 3000, reverse: false });
+        await this.usernameInput().waitForDisplayed({ timeout: 3000, reverse: true });
 
         return this;
     }
 
-    async login(username: string, password: string) {
-        await this.usernameInput().setValue(username);
-        await this.passwordInput().setValue(password);
+    async login(user) {
+        await this.usernameInput().scrollIntoView();
+        await this.usernameInput().setValue(user.username);
+        await this.passwordInput().setValue(user.password);
         await this.loginButton().click();
     }
 
@@ -24,4 +25,4 @@ class LoginPage extends BasePage {
     }
 }
 
-export default new LoginPage();
+//export default new LoginPage();
