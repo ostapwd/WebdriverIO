@@ -13,7 +13,8 @@
             "mocha",
             "@wdio/cucumber-framework",
             "node",
-            "expect-webdriverio"
+            "expect-webdriverio",
+            "jest"
         ],
         "allowSyntheticDefaultImports": true,
         "esModuleInterop": true,
